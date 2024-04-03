@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Lite</title>
+    <link rel="icon" type="image" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class = "logo"> <img src="imgs/logo.png" alt="Spotify"> Spotify </li>
+            <!-- <li>Home</li>
+            <li>About</li> -->
+        </ul>
+    </nav>
+
+    <div class="main">
+        <img class="backgroundImage" src="imgs/bg.jpg" alt="bg">
+        <div class="left">
+            <h1>Your Playlist</h1>
+            <!-- <center>Your Playlist</center> -->
+            <div class="allSongs">
+                <!-- <div class="songList">
+                    <img src="covers/1.jpg" alt="1">            
+                    <p>Legion</p>
+                    <span class="songListPlay">
+                        <span>05:34</span>
+                        <i class="ri-play-circle-fill playThisSong"></i>
+                    </span>
+                </div> -->
+
+                <!-- we will be adding songs with the help of js -->
+            </div>
+        </div>
+        <!-- <div class="right"></div> -->
+    </div>
+
+    <div class="player">
+        <div class="icons">
+            <!-- icons -->
+            <i class="ri-skip-back-fill" id="prevBtn"></i>
+            <i class="ri-play-circle-fill" id="playBtn"></i>
+            <i class="ri-skip-forward-fill" id="forwBtn"></i>
+        </div>
+        <input type="range" name="range" id="songBar" value="0" min="0" max="100">
+        <div class="currName">
+            <img src="imgs/playing.gif" alt="gif">
+            <span class = "songName">Legion</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

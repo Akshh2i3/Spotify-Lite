@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(30, 215, 96);
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height:4vw;
+    background-color: black;
+    color: white;
+    gap: 2vw;
+}
+
+.logo img{
+    width: 2.8vw;
+    margin-left: 1vw; 
+    /* margin-top: 0.4vw; */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: bolder;
+    gap: 0.2vw;
+}
+
+.player{
+    background-color: black;
+    color: white;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content: space-evenly; 
+    position: relative;
+}
+
+#songBar{
+    width: 70vw;
+    cursor: pointer;
+}
+
+.player i{
+    font-size: 3vw;
+    cursor: pointer;
+    margin: 0 0.5vw;
+}
+
+.main{
+    height: calc(100% - 4vw - 8vw - 4vw);  /* 4vw of nav bar, 8vw of player, 4vw of padding from top and bottom */
+    /* background-color: crimson; */
+    /* background-image: url('bg.jpg'); */
+    overflow: hidden;
+    color: white;
+    display: flex;
+    width: 60%;
+    margin: 2vw auto;
+    border-radius: 40px;
+    /* padding: 1vw; */
+    position: relative;
+}
+
+.left{
+    position: absolute;
+    left:0;
+    width: 50%;
+    height: 100%;
+    padding: 1vw 2vw;
+    /* background-color: brown; */
+    /* background-color: aquamarine; */
+}
+
+.allSongs{
+    height: 92%;
+    overflow-y: auto;
+    /* overflow-x: hidden; */
+}
+
+.allSongs::-webkit-scrollbar{
+    display: none;
+}
+
+/* .left h1{
+    position: sticky;
+    top: 0;
+    left: 0;
+} */
+
+
+.backgroundImage{
+    width: 100%;
+    height: 100%;
+}
+
+.songList{
+    height: 4vw;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 1vw;
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 0 10px;
+    overflow: hidden;
+    font-size: 1.1vw;
+    margin-top: 1.5vw;
+}
+
+.songList p{
+    font-size: 1.5vw;
+}
+
+.songList img{
+    width:20%;
+    margin-left: 1vw;
+    /* border-radius: 50px; */
+}
+
+.songListPlay{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.playThisSong{
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.currName{
+    position: absolute;
+    left: 15%;
+    top:30%;
+    font-size: 1.3vw;
+    /* display: none; */
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.currName img{
+    width: 10%;
+    /* opacity: 0;
+    transition: opacity 1s ease-in; */
+    margin-right: 1vw;
+}
